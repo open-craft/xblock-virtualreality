@@ -1,0 +1,18 @@
+machine:
+  python:
+    version: 2.7.10
+dependencies:
+  override:
+    - "pip install -U pip wheel"
+    - "pip install setuptools"
+    - "pip install -r requirements.txt"
+    - "pip install -r requirements-test.txt"
+    - "pip install -r $VIRTUAL_ENV/src/xblock-sdk/requirements/base.txt"
+    - "pip install -r $VIRTUAL_ENV/src/xblock-sdk/requirements/test.txt"
+    - "pip install -e ."
+    - "mkdir var"
+test:
+  override:
+    - "pep8 virtualreality --max-line-length=120"
+    - "pylint virtualreality --disable=all --enable=function-redefined,undefined-variable,unused-import,unused-variable"
+    - "python run_tests.py"

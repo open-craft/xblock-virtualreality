@@ -1,0 +1,2 @@
+mock
+-e git+https://github.com/edx/xblock-sdk.git@c40b5dc3e9a2ded54119e922edf486d3ccec6c35#egg=xblock-sdk
