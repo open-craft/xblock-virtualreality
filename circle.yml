@@ -1,18 +1,33 @@
-machine:
-  python:
-    version: 2.7.10
-dependencies:
-  override:
-    - "pip install -U pip wheel"
-    - "pip install setuptools"
-    - "pip install -r requirements.txt"
-    - "pip install -r requirements-test.txt"
-    - "pip install -r $VIRTUAL_ENV/src/xblock-sdk/requirements/base.txt"
-    - "pip install -r $VIRTUAL_ENV/src/xblock-sdk/requirements/test.txt"
-    - "pip install -e ."
-    - "mkdir var"
-test:
-  override:
-    - "pep8 virtualreality --max-line-length=120"
-    - "pylint virtualreality --disable=all --enable=function-redefined,undefined-variable,unused-import,unused-variable"
-    - "python run_tests.py"
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:2.7.14-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependencies-{{ checksum "circle.yml" }}-{{ checksum "requirements.txt" }}-{{ checksum "requirements-test.txt" }}
+      - run:
+          name: Install Python deps in a venv
+          command: |
+            virtualenv venv
+            . venv/bin/activate
+            pip install -U pip wheel
+            pip install setuptools
+            pip install -r requirements.txt
+            pip install -r requirements-test.txt
+            pip install -r $VIRTUAL_ENV/src/xblock-sdk/requirements/base.txt
+            pip install -r $VIRTUAL_ENV/src/xblock-sdk/requirements/test.txt
+            pip install -e .
+            mkdir var
+      - save_cache:
+          key: dependencies-{{ checksum "circle.yml" }}-{{ checksum "requirements.txt" }}-{{ checksum "requirements-test.txt" }}
+          paths:
+            - "venv"
+      - run:
+          name: Run tests
+          command: |
+            . venv/bin/activate
+            pep8 virtualreality --max-line-length=120
+            pylint virtualreality --disable=all --enable=function-redefined,undefined-variable,unused-import,unused-variable
+            python run_tests.py
