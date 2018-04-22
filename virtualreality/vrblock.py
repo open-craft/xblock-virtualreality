@@ -81,6 +81,7 @@ class VRBlock(StudioEditableXBlockMixin, XBlock):
         fragment.add_css_url(
             self.runtime.local_resource_url(self, "public/css/vr.css")
         )
+        self.runtime.publish(self, 'progress', {})
         return fragment
 
     def student_view_data(self, context=None):
