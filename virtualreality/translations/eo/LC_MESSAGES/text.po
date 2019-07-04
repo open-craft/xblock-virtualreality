@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-04 12:02-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: vrblock.py
+msgid "Virtual Reality"
+msgstr "Vïrtüäl Réälïtý Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт α#"
+
+#: vrblock.py
+msgid "Title"
+msgstr "Tïtlé Ⱡ'σяєм ιρѕ#"
+
+#: vrblock.py vrblock.py
+msgid "Video Title"
+msgstr "Vïdéö Tïtlé Ⱡ'σяєм ιρѕυм ∂σłσя #"
+
+#: vrblock.py
+msgid "Description"
+msgstr "Désçrïptïön Ⱡ'σяєм ιρѕυм ∂σłσя #"
+
+#: vrblock.py vrblock.py
+msgid "Video Description"
+msgstr "Vïdéö Désçrïptïön Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмє#"
+
+#: vrblock.py
+msgid "Embed Code"
+msgstr "Émßéd Çödé Ⱡ'σяєм ιρѕυм ∂σłσ#"
+
+#: vrblock.py
+msgid "URL for Vimeo 360 URL"
+msgstr "ÛRL för Vïméö 360 ÛRL Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, #"
+
+#: vrblock.py
+msgid "High Resolution Video URL"
+msgstr "Hïgh Résölütïön Vïdéö ÛRL Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕ#"
+
+#: vrblock.py
+msgid "URL to high resolution video"
+msgstr "ÛRL tö hïgh résölütïön vïdéö Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕє¢#"
+
+#: vrblock.py
+msgid "Low Resolution Video URL"
+msgstr "Löw Résölütïön Vïdéö ÛRL Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢ση#"
+
+#: vrblock.py
+msgid "URL to low resolution video"
+msgstr "ÛRL tö löw résölütïön vïdéö Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕє#"
