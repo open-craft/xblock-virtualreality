@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-04 12:02-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: vrblock.py:26
+msgid "Virtual Reality"
+msgstr "가상 현실"
+
+#: vrblock.py:30
+msgid "Title"
+msgstr "제목"
+
+#: vrblock.py:31 vrblock.py:32
+msgid "Video Title"
+msgstr "비디오 제목"
+
+#: vrblock.py:36
+msgid "Description"
+msgstr "설명"
+
+#: vrblock.py:37 vrblock.py:38
+msgid "Video Description"
+msgstr "비디오 설명"
+
+#: vrblock.py:42
+msgid "Embed Code"
+msgstr "삽입 코드"
+
+#: vrblock.py:43
+msgid "URL for Vimeo 360 URL"
+msgstr "Vimeo 360 URL"
+
+#: vrblock.py:48
+msgid "High Resolution Video URL"
+msgstr "고해상도 비디오 URL"
+
+#: vrblock.py:49
+msgid "URL to high resolution video"
+msgstr "고해상도 비디오에 대한 URL"
+
+#: vrblock.py:54
+msgid "Low Resolution Video URL"
+msgstr "저해상도 비디오 URL"
+
+#: vrblock.py:55
+msgid "URL to low resolution video"
+msgstr "저해상도 비디오에 대한 URL"
