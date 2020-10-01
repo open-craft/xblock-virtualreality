@@ -16,7 +16,7 @@ def package_data(pkg, root):
 
 setup(
     name='xblock-virtualreality',
-    version='0.1.4',
+    version='0.1.5',
     description='Virtual Reality XBlock',
     packages=['virtualreality'],
     classifiers=[
