@@ -1,5 +1,5 @@
 mock
-django==2.2.14
+django==2.2.20
 -r requirements.txt
 -e git+https://github.com/edx/xblock-sdk.git@0.2.2#egg=xblock-sdk
 mako
